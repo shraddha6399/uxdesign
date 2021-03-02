@@ -1,0 +1,76 @@
+body {
+    color: #ffff;
+    padding: 20px;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  // Layout
+  .accordion {
+    display:flex;
+    .column {
+      flex:1;
+      &:last-child {
+        margin-left: 1em;
+      }
+    }
+  }
+  /* Accordion styles */
+  .tabs {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .tab {
+    width: 100%;
+    color: #F2707C;
+    overflow: hidden;
+    &-label {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-bottom:1px solid #0000;
+      /* Icon */
+      &::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all .35s;
+      }
+    }
+    &-content {
+      max-height: 0;
+      padding: 0 1em;
+      color: black;
+      background:#ffff;
+      transition: all .35s;
+    }
+    &-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 15px;
+      font-size: 12px;
+      background: #ffff;
+      cursor: pointer;
+    }
+  }
+  
+  // :checked
+  input:checked {
+    + .tab-label {
+      background:#ffff;
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    ~ .tab-content {
+      max-height: 100vh;
+      padding: 15px;
+    }
+  }
+  

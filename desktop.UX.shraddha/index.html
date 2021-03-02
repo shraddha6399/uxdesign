@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        @media screen and (min-width: 1440px) {
+            .Mobotopnav {
+                display: none;
+            }
+            
+        }
+
+        /*On screens that are 600px wide or less*/
+        @media screen and (max-width: 600px) {
+            .topnav {
+                display: none;
+            }  
+        }
+
+    </style>
+</head>
+
+<body style="background-color:#FFFFFF">
+    <!-- desktop navigation -->
+    <div class="topnav">
+
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a href="#home">AFC.Inc</a>
+        </div>
+
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+            <a href="#track">Track My Application</a>
+            <a href="#manage">Manage My Card</a>
+            <a href="#faqs" style="transform: translate(-100%, +50%);">FAQs</a>
+            <a href="#Get Started" class="topnav-salmon">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-cont">
+
+        <!-- Top Navigation Menu -->
+        <div class="Mobotopnav">
+            <div class="mobologo">
+            <a href="#home" style="color:#FFFFFF;" >AFC.Inc</a>
+             </div>
+            <div id="myLinks"></br>
+                <a href="#track">Track My Application</a>
+                <a href="#manage">Manage My Card</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#Get Started">Get Started</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </div>
+            <!-- End smartphone / tablet look -->
+            <br><br><br>
+            <div class="container-fluid">
+
+                <!--Grid 1-->
+                <div class="row" class="grid1">
+                  <div class="col-lg-6 " style="background-color:#ffff;">
+                <h3 class="grid1heading">Build a Card <br>That is Definitely Yours</h3>
+                 <p class="grid1para"> With the OneSync Credit Card you can customise your card the way you want</p>
+                 <a href="#Get Started"class="grid1button">Get Started<a>
+                </div>
+                  <div class="col-lg-6 " style="background-color:#ffff;">
+                <img src="images/AtmWithIcon.svg" alt="AtmWithIcon" class="img1">
+               </div>
+                </div>
+                 <!--Grid 1 End-->
+            <!--Grid 2-->
+            <br><br><br>
+                 
+                <div class="row" class="grid2">
+                  <div class="col-lg-6 " style="background-color:#8E7CB5;">
+                <h3 class="grid2heading">The Freedom to Create<br>The Credit Card Your Want</h3>
+                </div>
+                  <div class="col-lg-6 " style="background-color:#8E7CB5;">
+                    <p class="grid2para">That's why it comes with benefits & rewards chosen by you.
+                         Available in multiple designs, your card comes in a style selected by you.
+                          You can come back each year, to edit your benefits or update your style.<br><br>
+                          Your OneSync Credit Card stays true to you, year after year. It’s the only card you’ll ever need.</p>
+                    <a href="#Get Started"class="grid2link">Get Started ></a>
+                </div>
+            </div>
+            <!--Grid 2 End-->
+             <!--Grid 3-->
+             
+             <div class="row" class="col-lg-12" class="grid4">
+              
+              <div class="col-lg-6 " style="background-color:#FFFFFF;">
+                <div class="container" style="width:50%;">
+                  <form action="/action_page.php">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="Enter your Phone number" name="email">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter your PAN number" name="pwd">
+                    </div>
+                     <div class="form-group">
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter Address " name="pwd">
+                    </div>
+                  </form>
+                </div>
+            </div>
+
+              <div class="col-lg-6 " style="background-color:#FFFFFF;">
+                <i class="fa fa-file-text" style="font-size:36px;color:lightblue; padding-top:60px;"></i>
+                <h3 class="grid3heading">Fill Eligibility Form</h3>
+              <p class="grid3para">Tell us about yourself, to find out if <br>you’re eligible to apply.</p> 
+            </div>
+            </div>
+              <!--Grid 3 End-->
+               <!--Grid 4 -->
+               <div class="row" class="grid4">
+                <div class="col-lg-6 " style="background-color:#FFE4E7;">
+              <i class="fa fa-gift" style="font-size:36px; color:rgb(216, 79, 102);padding-top: 50px;"></i>
+              <h3 class="grid4heading">Choose Your Rewards</h3>
+               <p class="grid4para"> Match your card to your lifestyle.
+                    We’ve got <br> benefits from across brands & categories for <br> you to choose from. 
+                    Each benefit has an <br> attached fee. Just add the ones you like to <br> your card.</p>
+              </div>
+                <div class="col-lg-6 " style="background-color:#FFE4E7;">
+                    <div class="container">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                          </ol>
+                      
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                            <div class="item active" style=" width:200px; height:380px;padding-top: 30px;">
+                              <img src="images/iImageRectangle.svg" alt="iImageRectangle" style=" width:100%; height:100%;">
+                            </div>
+                      
+                            <div class="item" style=" width:200px; height:380px;padding-top: 30px;">
+                              <img src="images/offer.svg " alt="offer"  style=" width:100%; height:100%;">
+                            </div>
+                          
+                            <div class="item" style=" width:200px; height:380px;padding-top: 30px;">
+                              <img src="images/blackRectangle.svg" alt="blackRectangle" style=" width:100%; height:100%;">
+                            </div>
+                          </div>
+                      
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        </a>
+                        </div>
+                      </div>
+             </div>
+              </div>
+                <!--Grid 4 End-->
+                 <!--Grid 5 -->
+               
+
+                 <div class="row" class="grid5">
+                    <div class="col-lg-6 " style="background-color:#F7F3FF;">
+                        <div class="container" >
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-left: 20%;">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                              </ol>
+                          
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                <div class="item active" style=" width:200px; height:380px;padding-top: 30px;">
+                                  <img src="images/black.svg" alt="iImageRectangle" style=" width:100%; height:100%;">
+                                </div>
+                          
+                                <div class="item" style=" width:200px; height:380px;padding-top: 30px;">
+                                  <img src="images/blue.svg.svg " alt="offer"  style=" width:100%; height:100%;">
+                                </div>
+                              
+                                <div class="item" style=" width:200px; height:380px;padding-top: 30px;">
+                                  <img src="images/pink.svg" alt="blackRectangle" style=" width:100%; height:100%;">
+                                </div>
+
+                                <div class="item" style=" width:200px; height:380px;padding-top: 30px;">
+                                    <img src="images/gradient.svg" alt="blackRectangle" style=" width:100%; height:100%;">
+                                  </div>
+                              </div>
+
+                              <!-- Left and right controls -->
+                              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            </a>
+                            </div>
+                          </div>
+                  </div>
+                    <div class="col-lg-6 " style="background: #F7F3FF;">
+                      <i class="fa fa-paperclip" style="font-size:36px;color: thistle;padding-top: 50px;"></i>
+                        <h3 class="grid4heading">Select your Style</h3>
+                         <p class="grid4para"> Match your card to your personality.
+                              Whether <br> you like a minimal look or something that <br> catches everyone’s eyes,
+                               we’ve got a style for <br> you. You can update your style every year, for <br> a small fee </p>
+                 </div>
+                  </div>
+                  <!--Grid 5 End-->
+                  <!--Grid 6 -->
+                  <div class="row" class="grid6">
+                    <div class="col-lg-12 " style="background-color:#FFFFFF;">
+                        <h2 class="grid7heading"> FAQS </h2>
+                        <div class="acordion">
+                            <div class="column">  
+                              <div class="tabs" style="width: 60%; margin-left: 20%;">
+                                <div class="tab">
+                                  <input type="checkbox" id="chck1">
+                                  <label class="tab-label" for="chck1">Who’s eligible for the Card?</label>
+                                  <div class="tab-content">
+                                    If you’re between 23-60 years of age, have a monthly income of ₹25,000 or more,
+                                     and have never defaulted on a credit card or loan payment,
+                                     we’d encourage you to apply. However, your application will be declined if your
+                                      location isn’t serviceable or if your credit score is low.
+                                  </div>
+                                </div>
+                                <div class="tab">
+                                  <input type="checkbox" id="chck2">
+                                  <label class="tab-label" for="chck2">Is my location serviceable?</label>
+                                  <div class="tab-content">
+                                    If you’re between 23-60 years of age, have a monthly income of ₹25,000 or more, 
+                                    and have never defaulted on a credit card or loan payment, we’d encourage you to apply.
+                                     However, your application will be declined if your location isn’t serviceable or if your credit score is low.
+                                  </div>
+                                </div>
+                                <div class="acordion">
+                                    <div class="column">  
+                                      <div class="tabs">
+                                        <div class="tab">
+                                          <input type="checkbox" id="chck1">
+                                          <label class="tab-label" for="chck1">What if I don’t want to pay at all?
+
+                                        </label>
+                                          <div class="tab-content">
+                                            If you’re between 23-60 years of age, have a monthly income of ₹25,000 or more
+                                            and have never defaulted on a credit card or loan payment, we’d encourage you to apply.
+                                             However, your application will be declined if your location isn’t serviceable or if your 
+                                             credit score is low.
+                                          </div>
+                                        </div>
+                                        <div class="tab">
+                                          <input type="checkbox" id="chck2">
+                                          <label class="tab-label" for="chck2">What happens after I’ve build my card?</label>
+                                          <div class="tab-content">
+                                            If you’re between 23-60 years of age, have a monthly income of ₹25,000 or more,
+                                             and have never defaulted on a credit card or loan payment,
+                                             we’d encourage you to apply. However, your application will be declined if your location isn’t 
+                                             serviceable or if your credit score is low.
+                                          </div>
+                                        </div> <br> <br> <br>
+                              </div>
+                            </div>
+                            
+                 </div>
+                  </div>
+                  <!--Grid 6 End-->
+                  <!--Grid 7-->
+                  <div class="row" class="grid7" style="text-align:left;"class="container-fluid">
+                    <div class="col-lg-12" style="background: #12193B;" >
+                  <h3 class="grid7heading">Build a Card <br>That is Definitely Yours</h3>
+                   <p class="grid7para"> With the OneSync Credit Card you can customise your card the way you want</p>
+                   <a href="#Get Started"class="grid7button" style="background: #7C7EB5;">Get Started </a></br></br>
+                  </div>
+                 
+                    <div class="col-lg-12" style="background: #12193B;">
+                        <hr class="new4">
+                        <div id="links" class="col-lg-3 ">
+                            <a href="#track"  class="footerlinks">Manage your Card</a></br></br>
+                            <a href="#manage"  class="footerlinks">Track your Application</a></br></br>
+                            <a href="#faqs"  class="footerlinks">Contact Us</a></br></br></br>
+                           
+                        </div>
+                        <div id="links" class="col-lg-3 "></br>
+                            <a href="#track"  class="footerlinks">Manage your Card</a></br></br>
+                            <a href="#manage"  class="footerlinks">Track your Application</a></br></br>
+                            <a href="#faqs"  class="footerlinks">Contact Us</a></br></br></br>
+                            
+                        </div>
+                        <div id="links" class="col-lg-3 "></br>
+                            <a href="#track"  class="footerlinks">Manage your Card</a></br></br>
+                            <a href="#manage"  class="footerlinks">Track your Application</a></br></br>
+                            <a href="#faqs"  class="footerlinks">Contact Us</a></br></br></br>
+                        </div>
+                        <div id="links" class="col-lg-3 "></br>
+                            <a href="#track"  class="footerlinks">Manage your Card</a></br></br>
+                            <a href="#manage"  class="footerlinks">Track your Application</a></br></br>
+                            <a href="#faqs"  class="footerlinks">Contact Us</a></br></br></br>
+                            
+                        </div>
+                 </div>
+                  </div>
+                
+
+
+                  <!--Grid 7 End-->
+                  
+                
+            </div>
+                
+            
+              
+    <script src="script.js"></script>
+</body>
+
+</html>

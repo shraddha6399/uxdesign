@@ -1,0 +1,59 @@
+.grid1{
+    height: auto;
+    text-align: center;
+    align-items: center;
+    
+}
+.grid1heading{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 130%;
+padding-top: 60px;
+display: flex;
+align-items: flex-end;
+color: #000000;
+padding-top: 100px;
+text-align: left;
+
+
+}
+.grid1para{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    padding-bottom: 30px;
+    text-align: left;
+    
+}
+.grid1button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 40px;
+    width: 172px;
+    height: 43px;
+    left: 108px;
+    top: 484px;
+    background: #F2707C;
+    border-radius: 30px;
+    color: #ffff;
+    text-decoration-line: none;  
+    
+}
+.grid1button:hover{
+    color:#ffff ;
+    text-decoration-line: none;
+}
+.img1{
+    width:80%;
+    height:auto;
+    margin-left:10%;
+}

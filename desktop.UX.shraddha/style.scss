@@ -1,0 +1,60 @@
+@import "./_desktopTopMenu.scss";
+@import"./_MoboTopMenu.scss";
+@import"./_Grid1.scss";
+@import"./_Grid2.scss";
+@import"./_Grid3.scss";
+@import"./_Grid4.scss";
+@import"./_Grid6.scss";
+
+.grid7{
+    height: auto;
+    text-align: center;
+    align-items: center;
+    
+}
+.grid7heading{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 130%;
+padding-top: 60px;
+color: #000000;
+padding-top: 100px;
+text-align: center;
+
+
+}
+.grid7para{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    padding-top: 20px;
+    color: #000000;
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
+.grid7button{
+    margin-left:45%;
+    padding: 8px 40px;
+    width: 272px;
+    height: 63px;
+    left: 108px;
+    top: 484px;
+    border-radius: 30px;
+    color: #ffff;
+    text-decoration-line: none;  
+}
+.grid7button:hover{
+    color:#ffff ;
+    text-decoration-line: none;
+}
+.footerlinks{
+    color:#ffff;
+    
+}
+hr.new4 {
+    border: 1px solid #ffff;}
